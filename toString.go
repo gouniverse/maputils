@@ -12,6 +12,9 @@ func toString(v interface{}) string {
 	case string:
 		return v
 
+	case nil:
+		return ""
+
 	case []byte:
 		return btos(v)
 
