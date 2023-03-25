@@ -1,5 +1,10 @@
-# maputils
+# Map Utils
 
+![tests](https://github.com/gouniverse/maputils/workflows/tests/badge.svg)
+
+## Description
+
+Utility library for working with maps
 
 ## Installation
 
