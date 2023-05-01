@@ -1,4 +1,4 @@
-# Map Utils
+# Map Utils <a href="https://github.com/gouniverse/maputils" style="float:right:"><img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" loading="lazy"></a>
 
 ![tests](https://github.com/gouniverse/maputils/workflows/tests/badge.svg)
 
