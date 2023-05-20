@@ -14,5 +14,12 @@ go get github.com/gouniverse/maputils
 
 ## Function
 
+- AnyToArrayMapStringAny(data any) []map[string]any - converts an interface to array map[string]any
+- AnyToArrayMapStringString(data any) []map[string]string - converts an interface to array of map[string]string
+
+- AnyToMapStringAny(data any) map[string]any - converts an interface to map[string]any
+- AnyToMapStringString(data any) map[string]string - converts an interface to map[string]string
+
 - ArgsToMap([]string) map[string]string - converts an CLI arguments array to map
-- MapStringAnyToMapStringString(data map[string]any) map[string]string
+
+- MapStringAnyToMapStringString(data map[string]any) map[string]string - converts a map[string]any to map[string]string
