@@ -22,4 +22,5 @@ go get github.com/gouniverse/maputils
 
 - ArgsToMap([]string) map[string]string - converts an CLI arguments array to map
 
+- MapAnyToArrayMapStringAny(valueAny any) []map[string]any - converts an interface to array map[string]any
 - MapStringAnyToMapStringString(data map[string]any) map[string]string - converts a map[string]any to map[string]string
