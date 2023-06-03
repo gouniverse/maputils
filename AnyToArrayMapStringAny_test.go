@@ -6,16 +6,16 @@ import (
 )
 
 func TestAnyToArrayMapAny(t *testing.T) {
-	arrayStringString := []map[string]any{
+	arrayStringAny := []map[string]any{
 		{"first_name": "John"},
 		{"last_name": "Doe"},
 	}
 
-	mapString := AnyToArrayMapStringAny(arrayStringString)
+	mapStringAny := AnyToArrayMapStringAny(arrayStringAny)
 
 	expected := []map[string]any{{"first_name": "John"}, {"last_name": "Doe"}}
 
-	if !reflect.DeepEqual(mapString, expected) {
-		t.Error("Result", mapString, "DOES NOT match expected:", expected)
+	if !reflect.DeepEqual(mapStringAny, expected) {
+		t.Error("Result", mapStringAny, "DOES NOT match expected:", expected)
 	}
 }
