@@ -10,7 +10,8 @@ func AnyToMapStringString(data any) map[string]string {
 	t := reflect.TypeOf(data)
 
 	// Is it a map?
-	if t.Kind() != reflect.Map {
+	kind := t.Kind()
+	if kind != reflect.Map {
 		return nil
 	}
 

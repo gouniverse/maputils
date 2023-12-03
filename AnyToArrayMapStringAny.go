@@ -10,12 +10,14 @@ func AnyToArrayMapStringAny(data any) []map[string]any {
 	t := reflect.TypeOf(data)
 
 	// Is it array or slice?
-	if t.Kind() != reflect.Array && t.Kind() != reflect.Slice {
+	kind := t.Kind()
+	if kind != reflect.Array && kind != reflect.Slice {
 		return nil
 	}
 
 	// Is the element a map?
-	if t.Elem().Kind() != reflect.Map {
+	elemKind := t.Elem().Kind()
+	if elemKind != reflect.Map {
 		return nil
 	}
 
